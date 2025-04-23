@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bherabhai Kumbhar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.1/dist/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <div class="container">
+        <canvas class="webgl"></canvas>
+        
+        <header>
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="section active">
+                <div class="content">
+                    <h1>Hello, I'm <span class="highlight">Bherabhai Kumbhar</span></h1>
+                    <h2>Web Developer | BCA Graduate</h2>
+                    <p>Building dynamic web applications with Python, Django, and modern web technologies</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="Gray and White Simple Clean Resume.pdf" target="_blank" class="btn secondary-btn">Download CV</a>
+                    </div>
+                    <div class="home-social-icons">
+                        <a href="https://www.linkedin.com/in/bherabhai-kumbhar" target="_blank" class="social-icon home-social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bhavesh9586" target="_blank" class="social-icon home-social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section">
+                <div class="content">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-content">
+                        <div class="profile-container">
+                            <div class="profile-card">
+                                <div class="profile-frame"></div>
+                                <div class="profile-image-container">
+                                    <img src="assets/img/profile/profile.jpg" alt="Bherabhai Kumbhar" class="profile-image">
+                                </div>
+                                <div class="profile-effect-1"></div>
+                                <div class="profile-effect-2"></div>
+                                <span class="profile-dot profile-dot-1"></span>
+                                <span class="profile-dot profile-dot-2"></span>
+                                <span class="profile-dot profile-dot-3"></span>
+                                <span class="profile-dot profile-dot-4"></span>
+                            </div>
+                            <div class="profile-tag">Web Developer</div>
+                        </div>
+                        <div class="about-text">
+                            <p>I am a BCA graduate with hands-on experience in Python, Django, HTML, CSS, and SQL, along with basic knowledge of JavaScript. Passionate about building dynamic web applications and eager to contribute to real-world software development projects.</p>
+                            <p>Quick learner and dedicated to continuous skill improvement in a professional IT environment. I am excited to start my career in the tech industry and apply my education to solve real-world problems.</p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-box">
+                                <h3>BCA</h3>
+                                <p>Graduate</p>
+                            </div>
+                            <div class="stat-box">
+                                <h3>1+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-box">
+                                <h3>3+</h3>
+                                <p>Programming Languages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="content">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Development</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Python</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Django</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>SQL</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>CSS</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>JavaScript</span>
+                                        <span>40%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>English</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Hindi</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Gujarati</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-level" style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="content">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-banner">
+                                <span class="project-tag">Featured Project</span>
+                            </div>
+                            <div class="project-image" style="background-image: url('assets/img/projects/exclusive-shop-home.png');"></div>
+                            <div class="project-info">
+                                <h3>Exclusive Shop</h3>
+                                <div class="project-tech">
+                                    <span>Django</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>MySQL</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <p>A fully functional online shopping platform with features aimed at enhancing user experience and improving backend management. The project focuses on simplicity, security, and a custom-built approach to admin functionality.</p>
+                                
+                                <div class="project-features">
+                                    <h4><i class="fas fa-rocket"></i> Key Features</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> User Registration & Secure Login</li>
+                                        <li><i class="fas fa-check-circle"></i> Product Listing with Add-to-Cart Functionality</li>
+                                        <li><i class="fas fa-check-circle"></i> Payment Gateway Integration & Cash on Delivery</li>
+                                        <li><i class="fas fa-check-circle"></i> Order Tracking System</li>
+                                        <li><i class="fas fa-check-circle"></i> Custom Admin Panel (Replaced Django Default Admin)</li>
+                                        <li><i class="fas fa-check-circle"></i> Database integration with MySQL for all core data</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="project-links">
+                                    <a href="https://exclusiveshop.pythonanywhere.com/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+                                    <a href="#" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-banner">
+                                <span class="project-tag">Recent Project</span>
+                            </div>
+                            <div class="project-image" style="background-image: url('assets/img/projects/portfolio-screenshot.png');">
+                            </div>
+                            <div class="project-info">
+                                <h3>3D Interactive Portfolio</h3>
+                                <div class="project-tech">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <p>A modern, interactive personal portfolio website featuring 3D elements, animations, and responsive design. Built to showcase my skills, projects, and professional background with an engaging user experience.</p>
+                                
+                                <div class="project-features">
+                                    <h4><i class="fas fa-rocket"></i> Key Features</h4>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check-circle"></i> Interactive 3D particle background</li>
+                                        <li><i class="fas fa-check-circle"></i> Smooth animations and transitions</li>
+                                        <li><i class="fas fa-check-circle"></i> Fully responsive design for all devices</li>
+                                        <li><i class="fas fa-check-circle"></i> Modern UI with custom styling and animations</li>
+                                        <li><i class="fas fa-check-circle"></i> Interactive project cards and skill visualizations</li>
+                                        <li><i class="fas fa-check-circle"></i> Contact form with validation</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+                                    <a href="#" class="project-link"><i class="fas fa-code"></i> Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <div class="content">
+                    <h2 class="section-title">Education</h2>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Computer Applications</h3>
+                                <span class="timeline-date">2022 - 2025</span>
+                                <p>Smt. B.K. Mehta IT Center (BCA College), Palanpur</p>
+                                <ul>
+                                    <li>Gained a solid foundation in programming languages such as Django, Python and HTML/CSS</li>
+                                    <li>Developed problem-solving skills through practical coding exercises</li>
+                                    <li>Implemented web development projects as part of coursework</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Higher Secondary Education (12th - Commerce)</h3>
+                                <span class="timeline-date">Completed in 2022</span>
+                                <p>Gujarat Secondary and Higher Secondary Education Board (GSEB)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Secondary Education (10th)</h3>
+                                <span class="timeline-date">Completed in 2020</span>
+                                <p>Gujarat Secondary and Higher Secondary Education Board (GSEB)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="content">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="contact-icon">📧</i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>mrbvs9712@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="contact-icon">📱</i>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>+91 9586909446</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="contact-icon">📍</i>
+                                <div>
+                                    <h3>Location</h3>
+                                    <p>Arkhi, Banaskantha, Guj-385545</p>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">GitHub</a>
+                                <a href="#" class="social-link">Twitter</a>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form id="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn submit-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Bherabhai Kumbhar. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
