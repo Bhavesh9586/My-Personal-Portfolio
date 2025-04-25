@@ -1,0 +1,74 @@
+/* Scrolling text behind profile image */
+.scrolling-text-container {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.scrolling-text {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4070f4;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: max-content;
+}
+
+.scrolling-text-1 {
+    top: 20%;
+    left: 0;
+    animation-name: scroll-left-to-right;
+    animation-duration: 15s;
+}
+
+.scrolling-text-2 {
+    top: 40%;
+    right: 0;
+    animation-name: scroll-right-to-left;
+    animation-duration: 18s;
+}
+
+.scrolling-text-3 {
+    top: 60%;
+    left: 0;
+    animation-name: scroll-left-to-right;
+    animation-duration: 20s;
+}
+
+.scrolling-text-4 {
+    top: 80%;
+    right: 0;
+    animation-name: scroll-right-to-left;
+    animation-duration: 16s;
+}
+
+@keyframes scroll-left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scroll-right-to-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
